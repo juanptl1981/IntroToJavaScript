@@ -129,61 +129,61 @@ function onStateChange(event) {
 
 //**************************************
 //**************************************
-function onShapeChange(event) {
-  var selection = event.target.value;
+// function onShapeChange(event) {
+//   var selection = event.target.value;
 
   // Remove rows that don't match the date value
-  var rows = document.getElementsByClassName("table")[0].tBodies[0].rows;
+//   var rows = document.getElementsByClassName("table")[0].tBodies[0].rows;
 
-  if (selection !== "") { 
-    for (var i = 0; i < rows.length; i++) {
-      if (rows[i].cells[4].innerText != selection) {
-        // Set display to none
-        rows[i].style.display = "none";
-      } else {
-        // Display again
-        rows[i].removeAttribute("style");
-      }
-    }
-  } else {
-    for (var i = 0; i < rows.length; i++) {
-      // Display all again
-      rows[i].removeAttribute("style");
-    }
-  }
-  // Reset other filters
-  document.getElementById("date-input").value="";
-  document.getElementById("state-input").value="";
-  document.getElementById("country-input").value="";
-};
+//   if (selection !== "") { 
+//     for (var i = 0; i < rows.length; i++) {
+//       if (rows[i].cells[4].innerText != selection) {
+//         // Set display to none
+//         rows[i].style.display = "none";
+//       } else {
+//         // Display again
+//         rows[i].removeAttribute("style");
+//       }
+//     }
+//   } else {
+//     for (var i = 0; i < rows.length; i++) {
+//       // Display all again
+//       rows[i].removeAttribute("style");
+//     }
+//   }
+//   // Reset other filters
+//   document.getElementById("date-input").value="";
+//   document.getElementById("state-input").value="";
+//   document.getElementById("country-input").value="";
+// };
 
 
 //**************************************
 //**************************************
-function onCountryChange(event) {
-  var selection = event.target.value;
+// function onCountryChange(event) {
+//   var selection = event.target.value;
 
-  // Remove rows that don't match the date value
-  var rows = document.getElementsByClassName("table")[0].tBodies[0].rows;
+//   // Remove rows that don't match the date value
+//   var rows = document.getElementsByClassName("table")[0].tBodies[0].rows;
 
-  if (selection !== "") { 
-    for (var i = 0; i < rows.length; i++) {
-      if (rows[i].cells[3].innerText.toUpperCase() != selection) {
-        // Set display to none
-        rows[i].style.display = "none";
-      } else {
-        // Display again
-        rows[i].removeAttribute("style");
-      }
-    }
-  } else {
-    for (var i = 0; i < rows.length; i++) {
-      // Display all again
-      rows[i].removeAttribute("style");
-    }
-  }
-  // Reset other filters
-  document.getElementById("date-input").value="";
-  document.getElementById("shape-input").value="";
-  document.getElementById("state-input").value="";
-};
+//   if (selection !== "") { 
+//     for (var i = 0; i < rows.length; i++) {
+//       if (rows[i].cells[3].innerText.toUpperCase() != selection) {
+//         // Set display to none
+//         rows[i].style.display = "none";
+//       } else {
+//         // Display again
+//         rows[i].removeAttribute("style");
+//       }
+//     }
+//   } else {
+//     for (var i = 0; i < rows.length; i++) {
+//       // Display all again
+//       rows[i].removeAttribute("style");
+//     }
+//   }
+//   // Reset other filters
+//   document.getElementById("date-input").value="";
+//   document.getElementById("shape-input").value="";
+//   document.getElementById("state-input").value="";
+// };
